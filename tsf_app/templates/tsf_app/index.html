@@ -1,0 +1,147 @@
+{% load static %}
+<!DOCTYPE html>
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Droid+Sans" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="css/styles.css" class="href"> -->
+	<link rel="stylesheet" href="{% static 'tsf_app/css/style.css' %}">
+    <script src="Js/basic.js"></script>
+  </head>
+  <body>
+    <aside class="side-nav" id="show-side-navigation1">
+      <i class="fa fa-bars close-aside hidden-sm hidden-md hidden-lg" data-close="show-side-navigation1"></i>
+      <div class="heading">
+        <img src="images/sparks_logo.png" alt="">
+        <div class="info">
+          <h3><a style="background: hwb(206 37% 40%)">Max Bank</a></h3>
+          <p style="background: hwb(206 37% 40%)">A well trusted bank, developed by ~ Shubham salekar</p>
+        </div>
+      
+      <ul class="categories">
+        <li><i class="fa fa-home fa-fw" aria-hidden="true"></i><a href="{% url 'customers' %}">View Customers</a>
+          <ul class="side-nav-dropdown">
+            
+          </ul>
+        </li>
+        
+        
+        
+        
+        <!-- Extras -->
+
+      </ul>
+    </aside>
+    <section id="contents">
+      <nav class="navbar navbar-default">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+              <i class="fa fa-align-right"></i>
+            </button>
+            <a class="navbar-brand" href="#">bank<span class="main-color">Dashboard</span></a>
+          </div>
+          <div class="collapse navbar-collapse navbar-right" id="bs-example-navbar-collapse-1">
+            
+            
+            
+          </div>
+        </div>
+      </nav>
+      <div class="welcome">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="content">
+                <h2>Welcome, Nice to meet you</h2>
+                <p>Trusted banking experience</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <section class="statistics">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-md-6">
+            <a href="{% url 'customers' %}">
+              <div class="box">
+                <i class="fa fa-envelope fa-fw bg-primary"></i>
+                <div class="info">
+                  <h3 a href="{% url 'customers' %}">View Customers</h3>
+                  <p>Pay bills online...</p>
+                </div>
+              </div>
+              </a>
+            </div>
+            <div class="col-md-6">
+              <a href="{% url 'customers' %}"> 
+              <div class="box">
+                <i class="fa fa-file fa-fw danger"></i>
+                <div class="info">
+                  <h3 a href="{% url 'customers' %">Transfer Money</h3>
+                  <p>Transfer Money In One CLick</p>
+                </div> 
+              </div>
+              </a>
+            </div>
+
+              </a>
+          </div>
+        </div>
+  </section>
+  <!-- Dummy Data -->
+  <section class="text-gray-600 body-font">
+  <div class="container px-5 py-24 mx-auto">
+    <style>
+      .container{
+        width: 100%;
+      }
+    </style>
+    <div class="text-center mb-20">
+      <h1 class="sm:text-3xl text-2xl font-medium text-center title-font text-white-900 mb-4">Web Development Project - Basic Banking System</h1>
+      <p class="text-base leading-relaxed xl:w-2/4 lg:w-3/4 mx-auto">Front-End : HTML, CSS , JS | Back-End :  PHP , Database : MySQL </p>
+    </div>
+    <div class="flex flex-wrap lg:w-4/5 sm:mx-auto sm:mb-2 -mx-2">
+      
+      
+      
+      
+      
+    </div>
+  </div>
+</section>
+<div class="content">
+  <style>
+    .content{
+      padding: 25px;
+      color: white;
+
+    }
+  </style>
+
+    
+
+  <!-- Copyright -->
+  <div class="text-center" style="background-color: rgba(0, 0, 0, 0.2)">
+  <style>
+    .text-center{
+      color: white;
+    }
+  </style>
+    © 2022 Shubham salekar
+    <a class="text-dark" href="https://www.linkedin.com/in/shubham-salekar-349ab0234">LinkedIn Profile</a>
+  </div>
+  <!-- Copyright -->
+
+</footer>
+<!-- Footer -->
+</body>
+</html>

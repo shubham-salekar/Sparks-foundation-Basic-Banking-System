@@ -1,0 +1,1 @@
+web: gunicorn tsf_project.wsgi --log-file -
